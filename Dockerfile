@@ -43,4 +43,4 @@ COPY entrypoint.sh /entrypoint.sh
 # change permission to execute entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/factory/services/entrypoint.sh"]
