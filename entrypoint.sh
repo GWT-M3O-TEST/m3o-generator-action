@@ -3,6 +3,8 @@ set -e
 
 echo 'Running M3O Generator Action'
 echo "Target: ${INPUT_TARGET}"
+WORK_DIR=$(pwd)
+echo "Working directory ${WORK_DIR}"
 
 m3o-client-gen ${INPUT_TARGET}
 
