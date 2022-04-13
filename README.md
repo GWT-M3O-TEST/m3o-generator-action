@@ -16,8 +16,26 @@ The result of this Action -->
 
 ## Example usage
 
-```bash
-uses: GWT-M3O-TEST/m3o-generator-action@v0.1.0
-with:
-  targett: 'dart'
+```yaml
+jobs:
+  generate:
+    name: build M3O CLI
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check GWT-m3o-cli repo
+        uses: actions/checkout@v2
+        with:
+          path: m3o-cli
+        
+      - name: Check micro/services repo
+        uses: actions/checkout@v2
+        with:
+          repository: 'micro/services'
+          path: services
+
+      - name: Generate m3o-cli clients
+        uses: GWT-M3O-TEST/m3o-generator-action@v0.1.5
+        with:
+          target: 'cli'
+          services_path: services
 ```
