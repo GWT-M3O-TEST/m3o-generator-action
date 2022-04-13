@@ -9,9 +9,15 @@ echo "Working directory ${WORK_DIR}"
 cd ${INPUT_SERVICES_PATH}
 m3o-client-gen ${INPUT_TARGET}
 
+echo "list services folder"
 ls -al
 
-cd ..
+echo "list services/examples folder"
+cd examples
+ls -al
+
+echo "list root folder"
+cd ../..
 ls -al
 
 # echo "::set-output name=success::$success"
