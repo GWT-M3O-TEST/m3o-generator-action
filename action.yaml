@@ -6,6 +6,9 @@ inputs:
     description: 'The language or the tool e.g. dart, cli or curl ...'
     required: true
     default: go
+  services_path:
+    description: 'The path to services'
+    required: true
 # outputs:
 #   success:
 #     description: 'The result of this Action'
