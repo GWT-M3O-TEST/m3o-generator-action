@@ -8,6 +8,10 @@ This action generates M3O clients of the specified target, target like dart, cli
 
 **Required** The name of the target. Default `"go"`.
 
+## `services_path`
+
+**Required** The path of micro/services.
+
 <!-- ## Outputs
 
 ## `success`
