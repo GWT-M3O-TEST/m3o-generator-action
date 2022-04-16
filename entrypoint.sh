@@ -14,9 +14,6 @@ if [ ${INPUT_TARGET} = 'go' ]
 then
     echo 'Formating m3o-go clients and examples'
     go fmt ./...
-    
-    echo 'Testing m3o-go clients'
-    go test -v ./...
 fi
 
 # echo "::set-output name=success::$success"
