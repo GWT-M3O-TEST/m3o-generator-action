@@ -29,7 +29,7 @@ RUN go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 RUN go get github.com/micro/micro/v3/cmd/protoc-gen-micro@master
 
 # Install openapi plugin
-RUN go install github.com/m3o/m3o/cmd/protoc-gen-openapi@main
+RUN go install github.com/m3o/GWT-M3O-TEST/cmd/protoc-gen-openapi@main
 
 # install generators old/new
 RUN go install github.com/GWT-M3O-TEST/m3o/cmd/client-generator@main
